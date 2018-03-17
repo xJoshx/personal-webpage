@@ -26,6 +26,10 @@ p {
   margin-top: 10%;
 }
 
+.space-top-half {
+  margin-top: 5%;
+}
+
 .tags {
   display: flex;
   list-style-type: none;
