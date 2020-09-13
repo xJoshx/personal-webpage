@@ -19,7 +19,7 @@ p {
 }
 
 .container--main {
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .space-top {
@@ -64,6 +64,48 @@ p {
   cursor: pointer;
 }
 
+
 .social__icon img {
   height: 24px;
+}
+
+.logo-wrapper {
+  width: 400px;
+  height: auto;
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 4px solid #000;
+  border-radius: 2px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: white;
+}
+
+.logo-wrapper::after {
+  content: ' ';
+  position: absolute;
+  background: #9013fe;
+  left: 15px;
+  top: 15px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 739px) {
+  
+.container--main {
+  padding: 20px;
+  margin: 0;
+}
+
+  .logo-wrapper {
+    width: calc(100% - 15px);
+  }
 }
